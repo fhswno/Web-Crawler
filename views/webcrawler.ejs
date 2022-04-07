@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%>></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+</head>
+<body>
+    <!-- WebCrawler Title -->
+    <body class="container">
+        <h1 class="text-center pt-5"><%=title%></h1>
+        <p class="text-center">Type a URL, Get all Domain URLs <u>in seconds.</u></p>
+    </body>
+    <br>
+
+    <!-- WEB CRAWLER FORM -->
+    <form action="/" method="POST">
+        <div class="form-group">
+            <label for="url">Enter URL (e.g. reallinks.io):</label>
+            <input type="text" class="form-control" name="url" required placeholder="Enter domain">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-block" type="submit">
+                Download Sitemap (in up to 10 seconds)
+            </button>
+        </div>
+        
+    </form>
+
+    <!-- Precisions about the Web Crawler -->
+    <div class="alert alert-secondary" role="alert">
+        The website will output a list of all internal links of the domain, along with a priority index between 0 and 1, which is a depth indicator for the URL (1 = base, 0 = very deep). <br>
+        Depending on the amount of links to retrieve, <b>it will take up to 10 seconds</b>.<br>
+        <b> It will take a while if the URL has more than 1,000 links. </b> 
+    </div>
+
+    <!-- Contact Section -->
+    <div class="alert alert-primary" role="alert">
+        Any question? Send me an email at <a href="mailto:hi@davidohayon.uk?subject=About Your Web Crawler&body=I have some questions about your web crawler...." class="alert-link">hi@davidohayon.uk</a>
+    </div>
+     
+</body>
+</html>
