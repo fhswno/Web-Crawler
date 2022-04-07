@@ -14,6 +14,13 @@ The `xml` will include all internal domain urls, along with a priority indicator
 
 If you need any help, or go through any issue with the WebCrawler, I have included my email address. Please send a description of the problem, plus steps, screenshots and info about your OS & System to make it easier for me to help 😊
 
+## How to run it 👀
+Clone the repository. Use the Terminal to `cd` into the project folder. 
+
+Run `npm install --save-dev nodemon`. Then, run `npm run start`. Nodemon should now listen for any updates. 
+
+Type `localhost:1000` in your browser, and you should see the Webpage.
+
 ## How it was built ⚒️
 This Web Crawler has been build in exactly 6 hours using the technology mentioned in the intro. It uses only four packages:
 * **Express.js** - for the backend.
